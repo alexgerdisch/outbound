@@ -63,14 +63,14 @@ export default function PostLayout({
         <article>
           <header>
             <h1>{title}</h1>
-            <div className={"metadata"}>
+            {/* <div className={"metadata"}>
               <div>
                 <Date date={date} />
               </div>
               <div>
                 <Author author={getAuthor(author)} />
               </div>
-            </div>
+            </div> */}
           </header>
           <div className={styles.content}>{children}</div>
           <ul className={"tag-list"}>
@@ -82,9 +82,9 @@ export default function PostLayout({
           </ul>
         </article>
         <footer>
-          <div className={"social-list"}>
+          {/* <div className={"social-list"}>
             <SocialList />
-          </div>
+          </div> */}
           <Copyright />
         </footer>
       </div>
